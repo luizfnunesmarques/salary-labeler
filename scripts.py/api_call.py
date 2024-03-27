@@ -28,7 +28,7 @@ def main():
     if not url:
         url = os.getenv('API_URL')
         if not url:
-            print("Error: No URL provided. Please provide a URL using --url argument or set the API_URL environment variable.")
+            print("Please provide a URL using --url argument or set the API_URL environment variable.")
             return
 
     payload = {

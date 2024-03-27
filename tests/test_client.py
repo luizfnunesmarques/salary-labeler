@@ -10,8 +10,47 @@ client = TestClient(app)
 @pytest.fixture
 def randomized_inference_data():
     """Fixture to provide randomized data for inference."""
-    country = random.choice(["United-States", "China", "Cuba", "?", "Italy", "Vietnam", "Laos", "Mexico", "Germany", "South", "Philippines", "Columbia", "Canada", "Dominican-Republic", "France", "Guatemala", "Scotland", "Peru", "Hong", "Puerto-Rico", "Greece",
-                            "Iran", "India", "Portugal", "Taiwan", "Japan", "Outlying-US(Guam-USVI-etc)", "El-Salvador", "Poland", "Cambodia", "Hungary", "Haiti", "Jamaica", "Nicaragua", "Ecuador", "England", "Ireland", "Trinadad&Tobago", "Thailand", "Honduras", "Yugoslavia"])
+    country = random.choice(["United-States",
+                             "China",
+                             "Cuba",
+                             "?",
+                             "Italy",
+                             "Vietnam",
+                             "Laos",
+                             "Mexico",
+                             "Germany",
+                             "South",
+                             "Philippines",
+                             "Columbia",
+                             "Canada",
+                             "Dominican-Republic",
+                             "France",
+                             "Guatemala",
+                             "Scotland",
+                             "Peru",
+                             "Hong",
+                             "Puerto-Rico",
+                             "Greece",
+                             "Iran",
+                             "India",
+                             "Portugal",
+                             "Taiwan",
+                             "Japan",
+                             "Outlying-US(Guam-USVI-etc)",
+                             "El-Salvador",
+                             "Poland",
+                             "Cambodia",
+                             "Hungary",
+                             "Haiti",
+                             "Jamaica",
+                             "Nicaragua",
+                             "Ecuador",
+                             "England",
+                             "Ireland",
+                             "Trinadad&Tobago",
+                             "Thailand",
+                             "Honduras",
+                             "Yugoslavia"])
     age = random.randint(18, 80)
     workclass = random.choice([
         "Private",
@@ -46,8 +85,21 @@ def randomized_inference_data():
     education_num = random.randint(1, 16)
     marital_status = random.choice(["Divorced", "Married-civ-spouse", "Married-spouse-absent",
                                    "Never-married", "Widowed", "Separated", "Married-AF-spouse"])
-    occupation = random.choice(["Sales", "Transport-moving", "Farming-fishing", "Exec-managerial", "Other-service", "Craft-repair", "Adm-clerical",
-                               "Prof-specialty", "?", "Protective-serv", "Machine-op-inspct", "Handlers-cleaners", "Tech-support", "Priv-house-serv", "Armed-Forces"])
+    occupation = random.choice(["Sales",
+                                "Transport-moving",
+                                "Farming-fishing",
+                                "Exec-managerial",
+                                "Other-service",
+                                "Craft-repair",
+                                "Adm-clerical",
+                                "Prof-specialty",
+                                "?",
+                                "Protective-serv",
+                                "Machine-op-inspct",
+                                "Handlers-cleaners",
+                                "Tech-support",
+                                "Priv-house-serv",
+                                "Armed-Forces"])
 
     relationship = random.choice(["Not-in-family", "Husband", "Unmarried", "Own-child", "Wife", "Other-relative"])
     race = random.choice(["White", "Asian-Pac-Islander", "Amer-Indian-Eskimo", "Black", "Other"])
