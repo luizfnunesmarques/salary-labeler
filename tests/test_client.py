@@ -129,6 +129,31 @@ def randomized_inference_data():
 
 @pytest.mark.parametrize("_", range(30))
 def test_randomized_inference_prediction(_, randomized_inference_data):
+    """ Test a randomised set of data against the inference endpoint.
+
+    Inputs
+    ------
+        Data fixtures.
+    Returns
+    -------
+        None
+    """
     response = client.post("/inference", json=randomized_inference_data)
     assert response.status_code == 200
     assert "inference_result" in response.json()
+
+
+def test_root():
+    """ Test if api at / returns 200.
+
+    Inputs
+    ------
+        None
+    Returns
+    -------
+        None
+    """
+    response = client.get("/")
+    assert response.status_code == 200
+    assert response.json() == {
+        "message": "Greetings. Please refer to /docs for OpenAPI specs."}
