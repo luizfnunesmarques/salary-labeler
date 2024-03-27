@@ -51,4 +51,4 @@ jobs:
           RENDER_KEY: ${{ secrets.RENDER_KEY }}
           TAG: ${{ steps.meta.outputs.tags }}
           COMMIT: ${{ github.sha }}
-        run: curl -X POST https://api.render.com/deploy/$RENDER_KEY&imgURL=ghcr.io/luizfnunesmarques/income-band-predictor:sha-$COMMIT
+        run: curl -X POST https://api.render.com/deploy/$RENDER_KEY&imgURL=ghcr.io/luizfnunesmarques/salary-labeler:sha-$COMMIT
