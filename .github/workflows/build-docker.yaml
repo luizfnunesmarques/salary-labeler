@@ -1,0 +1,54 @@
+name: "docker-build"
+
+on:
+  workflow_run:
+    workflows: ["CI"]
+    types:
+      - completed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v1
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Define tags
+        uses: docker/metadata-action@v5
+        id: meta
+        with:
+          images: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}
+          labels: |
+            org.opencontainers.image.source: ${{ github.event.repository.html_url }}
+            org.opencontainers.image.created: ${{ steps.docker_build.outputs.created }}
+            org.opencontainers.image.revision: ${{ github.sha }}
+          tags: |
+            type=sha,event=branch
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          platforms: linux/amd64
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Update deployment
+        env:
+          RENDER_KEY: ${{ secrets.RENDER_KEY }}
+          TAG: ${{ steps.meta.outputs.tags }}
+          COMMIT: ${{ github.sha }}
+        run: curl -X POST https://api.render.com/deploy/$RENDER_KEY&imgURL=ghcr.io/luizfnunesmarques/income-band-predictor:sha-$COMMIT

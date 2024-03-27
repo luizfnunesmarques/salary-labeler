@@ -1,0 +1,126 @@
+Metrics for slicing by workclass: 
+
+Private: {'precision': 0.6976906927921623, 'recall': 0.2518948964123295, 'fbeta': 0.37015036198255064} 
+Local-gov: {'precision': 0.6971428571428572, 'recall': 0.25311203319502074, 'fbeta': 0.3713850837138508} 
+?: {'precision': 0.5375, 'recall': 0.2654320987654321, 'fbeta': 0.35537190082644626} 
+Self-emp-inc: {'precision': 0.90625, 'recall': 0.3493975903614458, 'fbeta': 0.5043478260869566} 
+State-gov: {'precision': 0.78125, 'recall': 0.2640845070422535, 'fbeta': 0.39473684210526316} 
+Self-emp-not-inc: {'precision': 0.7300884955752213, 'recall': 0.2849740932642487, 'fbeta': 0.40993788819875776} 
+Federal-gov: {'precision': 0.6951219512195121, 'recall': 0.20357142857142857, 'fbeta': 0.31491712707182323} 
+Never-worked: {'precision': 1.0, 'recall': 1.0, 'fbeta': 1.0} 
+Without-pay: {'precision': 1.0, 'recall': 1.0, 'fbeta': 1.0} 
+------------ 
+Metrics for slicing by education: 
+
+HS-grad: {'precision': 0.56, 'recall': 0.20588235294117646, 'fbeta': 0.3010752688172043} 
+Bachelors: {'precision': 0.8247078464106845, 'recall': 0.2829324169530355, 'fbeta': 0.42132196162046903} 
+Some-college: {'precision': 0.6306532663316583, 'recall': 0.22633002705139765, 'fbeta': 0.3331121433311215} 
+Masters: {'precision': 0.8730769230769231, 'recall': 0.2994722955145119, 'fbeta': 0.44597249508840864} 
+11th: {'precision': 0.5151515151515151, 'recall': 0.40476190476190477, 'fbeta': 0.4533333333333333} 
+10th: {'precision': 0.4482758620689655, 'recall': 0.2549019607843137, 'fbeta': 0.325} 
+1st-4th: {'precision': 0.0, 'recall': 0.0, 'fbeta': 0.0} 
+Assoc-voc: {'precision': 0.6355140186915887, 'recall': 0.24285714285714285, 'fbeta': 0.35142118863049093} 
+9th: {'precision': 0.125, 'recall': 0.047619047619047616, 'fbeta': 0.06896551724137931} 
+12th: {'precision': 0.5454545454545454, 'recall': 0.21428571428571427, 'fbeta': 0.30769230769230765} 
+Prof-school: {'precision': 0.9637681159420289, 'recall': 0.4006024096385542, 'fbeta': 0.5659574468085107} 
+5th-6th: {'precision': 0.25, 'recall': 0.2727272727272727, 'fbeta': 0.2608695652173913} 
+Assoc-acdm: {'precision': 0.68, 'recall': 0.23943661971830985, 'fbeta': 0.35416666666666663} 
+Doctorate: {'precision': 0.9534883720930233, 'recall': 0.3241106719367589, 'fbeta': 0.4837758112094395} 
+7th-8th: {'precision': 0.3333333333333333, 'recall': 0.2, 'fbeta': 0.25} 
+Preschool: {'precision': 0.0, 'recall': 1.0, 'fbeta': 0.0} 
+------------ 
+Metrics for slicing by marital-status: 
+
+Married-civ-spouse: {'precision': 0.8193069306930693, 'recall': 0.24840525328330207, 'fbeta': 0.3812266052404262} 
+Never-married: {'precision': 0.39886039886039887, 'recall': 0.3645833333333333, 'fbeta': 0.38095238095238093} 
+Separated: {'precision': 0.5227272727272727, 'recall': 0.39655172413793105, 'fbeta': 0.45098039215686275} 
+Widowed: {'precision': 0.4666666666666667, 'recall': 0.3387096774193548, 'fbeta': 0.39252336448598124} 
+Divorced: {'precision': 0.5476190476190477, 'recall': 0.3074866310160428, 'fbeta': 0.3938356164383562} 
+Married-spouse-absent: {'precision': 0.6923076923076923, 'recall': 0.32142857142857145, 'fbeta': 0.4390243902439025} 
+Married-AF-spouse: {'precision': 1.0, 'recall': 0.14285714285714285, 'fbeta': 0.25} 
+------------ 
+Metrics for slicing by occupation: 
+
+Craft-repair: {'precision': 0.6159695817490495, 'recall': 0.21951219512195122, 'fbeta': 0.3236763236763237} 
+Tech-support: {'precision': 0.7833333333333333, 'recall': 0.2017167381974249, 'fbeta': 0.32081911262798635} 
+Other-service: {'precision': 0.22535211267605634, 'recall': 0.15384615384615385, 'fbeta': 0.18285714285714286} 
+?: {'precision': 0.5375, 'recall': 0.2654320987654321, 'fbeta': 0.35537190082644626} 
+Sales: {'precision': 0.7627737226277372, 'recall': 0.2628930817610063, 'fbeta': 0.39101964452759586} 
+Handlers-cleaners: {'precision': 0.34210526315789475, 'recall': 0.18309859154929578, 'fbeta': 0.23853211009174313} 
+Prof-specialty: {'precision': 0.8227360308285164, 'recall': 0.29008152173913043, 'fbeta': 0.4289301858362632} 
+Farming-fishing: {'precision': 0.5357142857142857, 'recall': 0.3225806451612903, 'fbeta': 0.40268456375838924} 
+Protective-serv: {'precision': 0.7659574468085106, 'recall': 0.21301775147928995, 'fbeta': 0.33333333333333337} 
+Priv-house-serv: {'precision': 0.0, 'recall': 1.0, 'fbeta': 0.0} 
+Transport-moving: {'precision': 0.6309523809523809, 'recall': 0.20622568093385213, 'fbeta': 0.31085043988269795} 
+Adm-clerical: {'precision': 0.5104166666666666, 'recall': 0.24317617866004962, 'fbeta': 0.32941176470588235} 
+Machine-op-inspct: {'precision': 0.46835443037974683, 'recall': 0.18686868686868688, 'fbeta': 0.2671480144404332} 
+Exec-managerial: {'precision': 0.8953488372093024, 'recall': 0.2986425339366516, 'fbeta': 0.4478914202617547} 
+Armed-Forces: {'precision': 1.0, 'recall': 0.0, 'fbeta': 0.0} 
+------------ 
+Metrics for slicing by relationship: 
+
+Husband: {'precision': 0.8298932384341637, 'recall': 0.24661590524534688, 'fbeta': 0.3802380564161096} 
+Not-in-family: {'precision': 0.5182648401826484, 'recall': 0.3338235294117647, 'fbeta': 0.4060822898032201} 
+Wife: {'precision': 0.7653061224489796, 'recall': 0.2608695652173913, 'fbeta': 0.38910505836575876} 
+Unmarried: {'precision': 0.5321100917431193, 'recall': 0.3352601156069364, 'fbeta': 0.41134751773049644} 
+Own-child: {'precision': 0.18867924528301888, 'recall': 0.37735849056603776, 'fbeta': 0.2515723270440251} 
+Other-relative: {'precision': 0.46153846153846156, 'recall': 0.35294117647058826, 'fbeta': 0.4000000000000001} 
+------------ 
+Metrics for slicing by race: 
+
+White: {'precision': 0.724950884086444, 'recall': 0.26008810572687224, 'fbeta': 0.38282972377123586} 
+Other: {'precision': 0.46153846153846156, 'recall': 0.375, 'fbeta': 0.41379310344827586} 
+Black: {'precision': 0.6370370370370371, 'recall': 0.27388535031847133, 'fbeta': 0.3830734966592428} 
+Amer-Indian-Eskimo: {'precision': 0.4117647058823529, 'recall': 0.23333333333333334, 'fbeta': 0.2978723404255319} 
+Asian-Pac-Islander: {'precision': 0.7341772151898734, 'recall': 0.27884615384615385, 'fbeta': 0.40418118466898956} 
+------------ 
+Metrics for slicing by sex: 
+
+Male: {'precision': 0.7635135135135135, 'recall': 0.2547914317925592, 'fbeta': 0.3820794590025359} 
+Female: {'precision': 0.5496031746031746, 'recall': 0.3007600434310532, 'fbeta': 0.38877192982456144} 
+------------ 
+Metrics for slicing by native-country: 
+
+United-States: {'precision': 0.7147603227337447, 'recall': 0.26356317815890795, 'fbeta': 0.3851169927119294} 
+Puerto-Rico: {'precision': 0.3333333333333333, 'recall': 0.14285714285714285, 'fbeta': 0.2} 
+Cuba: {'precision': 1.0, 'recall': 0.047619047619047616, 'fbeta': 0.0909090909090909} 
+Mexico: {'precision': 0.5, 'recall': 0.18181818181818182, 'fbeta': 0.26666666666666666} 
+South: {'precision': 0.5555555555555556, 'recall': 0.45454545454545453, 'fbeta': 0.5} 
+Germany: {'precision': 0.875, 'recall': 0.1891891891891892, 'fbeta': 0.3111111111111111} 
+India: {'precision': 0.8, 'recall': 0.25, 'fbeta': 0.38095238095238093} 
+Honduras: {'precision': 1.0, 'recall': 1.0, 'fbeta': 1.0} 
+Outlying-US(Guam-USVI-etc): {'precision': 1.0, 'recall': 1.0, 'fbeta': 1.0} 
+?: {'precision': 0.8222222222222222, 'recall': 0.30578512396694213, 'fbeta': 0.44578313253012053} 
+China: {'precision': 0.625, 'recall': 0.29411764705882354, 'fbeta': 0.4} 
+Guatemala: {'precision': 1.0, 'recall': 0.0, 'fbeta': 0.0} 
+Poland: {'precision': 0.75, 'recall': 0.2727272727272727, 'fbeta': 0.39999999999999997} 
+Philippines: {'precision': 0.8461538461538461, 'recall': 0.2391304347826087, 'fbeta': 0.3728813559322034} 
+Dominican-Republic: {'precision': 1.0, 'recall': 1.0, 'fbeta': 1.0} 
+Canada: {'precision': 0.6, 'recall': 0.1875, 'fbeta': 0.2857142857142857} 
+Peru: {'precision': 1.0, 'recall': 0.5, 'fbeta': 0.6666666666666666} 
+Japan: {'precision': 1.0, 'recall': 0.3333333333333333, 'fbeta': 0.5} 
+El-Salvador: {'precision': 0.6666666666666666, 'recall': 0.3333333333333333, 'fbeta': 0.4444444444444444} 
+England: {'precision': 0.8, 'recall': 0.16, 'fbeta': 0.26666666666666666} 
+Vietnam: {'precision': 0.4, 'recall': 0.5, 'fbeta': 0.4444444444444445} 
+Italy: {'precision': 0.5, 'recall': 0.05263157894736842, 'fbeta': 0.09523809523809525} 
+Jamaica: {'precision': 1.0, 'recall': 0.2222222222222222, 'fbeta': 0.3636363636363636} 
+Hong: {'precision': 1.0, 'recall': 0.0, 'fbeta': 0.0} 
+Iran: {'precision': 0.8333333333333334, 'recall': 0.35714285714285715, 'fbeta': 0.5} 
+Haiti: {'precision': 0.0, 'recall': 0.0, 'fbeta': 0.0} 
+Laos: {'precision': 1.0, 'recall': 0.0, 'fbeta': 0.0} 
+Yugoslavia: {'precision': 1.0, 'recall': 0.2, 'fbeta': 0.33333333333333337} 
+Cambodia: {'precision': 0.5, 'recall': 0.16666666666666666, 'fbeta': 0.25} 
+Trinadad&Tobago: {'precision': 0.5, 'recall': 0.5, 'fbeta': 0.5} 
+France: {'precision': 1.0, 'recall': 0.1, 'fbeta': 0.18181818181818182} 
+Nicaragua: {'precision': 1.0, 'recall': 0.0, 'fbeta': 0.0} 
+Columbia: {'precision': 1.0, 'recall': 0.0, 'fbeta': 0.0} 
+Ecuador: {'precision': 1.0, 'recall': 0.3333333333333333, 'fbeta': 0.5} 
+Scotland: {'precision': 1.0, 'recall': 0.0, 'fbeta': 0.0} 
+Taiwan: {'precision': 1.0, 'recall': 0.2857142857142857, 'fbeta': 0.4444444444444445} 
+Thailand: {'precision': 1.0, 'recall': 0.0, 'fbeta': 0.0} 
+Portugal: {'precision': 1.0, 'recall': 0.0, 'fbeta': 0.0} 
+Greece: {'precision': 0.625, 'recall': 0.7142857142857143, 'fbeta': 0.6666666666666666} 
+Ireland: {'precision': 1.0, 'recall': 0.0, 'fbeta': 0.0} 
+Hungary: {'precision': 0.0, 'recall': 0.0, 'fbeta': 0.0} 
+Holand-Netherlands: {'precision': 0.0, 'recall': 1.0, 'fbeta': 0.0} 
+------------ 
